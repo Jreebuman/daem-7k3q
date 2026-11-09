@@ -1,0 +1,1346 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}img{max-width:100%}</style>
+<title>الداعم المعنوي العنيف</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&family=Baloo+Bhaijaan+2:wght@400;500;700;800&family=Amiri:wght@400;700&display=swap">
+<style>
+/* Layout: a comic-sticker "support machine" on halftone pink paper; tools below as a 1 + 2x2 grid; a calm green prayer notebook at the end */
+:root {
+  --bg: #fff2f7;
+  --bg-dot: #f6d2e1;
+  --card: #ffffff;
+  --ink: #2a0f2e;
+  --muted: #76566f;
+  --line: #2a0f2e;
+  --shadow: #2a0f2e;
+  --pink: #ff3d81;
+  --pink-soft: #ffd9e7;
+  --blue: #3155f5;
+  --blue-soft: #dfe5ff;
+  --sun: #ffd23f;
+  --sun-soft: #fff1bf;
+  --mint: #22b98a;
+  --mint-soft: #d4f4e8;
+  --on-color: #2a0f2e;
+  --nur-bg: #edf7f1;
+  --nur-ink: #12392c;
+  --nur-line: #9cc9b3;
+  --gold: #9a6f12;
+  --display: "Lalezar", "Baloo Bhaijaan 2", "Segoe UI", Tahoma, sans-serif;
+  --body: "Baloo Bhaijaan 2", "Segoe UI", Tahoma, sans-serif;
+  --classic: "Amiri", "Traditional Arabic", "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1b0c1f; --bg-dot: #2c1532; --card: #27122c; --ink: #fbe8f1; --muted: #c9a9c3;
+    --line: #f3c9dc; --shadow: #070208; --pink: #ff5c96; --pink-soft: #4a1a33; --blue: #8ea2ff;
+    --blue-soft: #232a55; --sun: #ffd84f; --sun-soft: #4a3a12; --mint: #4fdcae; --mint-soft: #123d30;
+    --on-color: #2a0f2e; --nur-bg: #10261e; --nur-ink: #d9f2e6; --nur-line: #2e6b52; --gold: #e3bb5c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1b0c1f; --bg-dot: #2c1532; --card: #27122c; --ink: #fbe8f1; --muted: #c9a9c3;
+  --line: #f3c9dc; --shadow: #070208; --pink: #ff5c96; --pink-soft: #4a1a33; --blue: #8ea2ff;
+  --blue-soft: #232a55; --sun: #ffd84f; --sun-soft: #4a3a12; --mint: #4fdcae; --mint-soft: #123d30;
+  --on-color: #2a0f2e; --nur-bg: #10261e; --nur-ink: #d9f2e6; --nur-line: #2e6b52; --gold: #e3bb5c;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; direction: rtl; }
+body { direction: rtl; }
+body {
+  margin: 0;
+  background-color: var(--bg);
+  background-image: radial-gradient(var(--bg-dot) 1.3px, transparent 1.6px);
+  background-size: 18px 18px;
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; touch-action: manipulation; }
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-block: 28px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 28px;
+}
+
+/* Hero */
+.hero { display: grid; gap: 10px; justify-items: start; }
+.badge {
+  display: inline-block;
+  padding: 2px 12px;
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  background: var(--sun);
+  color: var(--on-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  transform: rotate(-2deg);
+}
+h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2.4rem, 9vw, 4.2rem);
+  line-height: 1.15;
+  text-wrap: balance;
+}
+.violent {
+  display: inline-block;
+  color: var(--pink);
+  text-shadow: 3px 3px 0 var(--shadow);
+  transform: rotate(-4deg);
+  animation: thump 0.9s cubic-bezier(.2,1.6,.4,1) 0.2s both;
+}
+@keyframes thump { from { transform: scale(1.8) rotate(8deg); opacity: 0; } }
+.tag { margin: 0; max-width: 60ch; color: var(--muted); font-size: 1.05rem; }
+
+/* Section headings */
+h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.sec-head { display: flex; align-items: end; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.sec-sub { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+/* Sticker surfaces */
+.sticker {
+  background: var(--card);
+  border: 3px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 6px 6px 0 var(--shadow);
+}
+
+/* Machine */
+.machine { padding: 20px; display: grid; gap: 16px; }
+.m-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.morale { display: grid; gap: 4px; min-width: 200px; flex: 1 1 200px; max-width: 320px; }
+.morale-top { display: flex; justify-content: space-between; gap: 8px; font-size: 0.85rem; font-weight: 700; }
+.morale-top span:last-child { color: var(--pink); }
+.bar { height: 14px; border: 2px solid var(--line); border-radius: 999px; padding: 2px; background: var(--bg); }
+.bar i { display: block; height: 100%; width: 4%; border-radius: 999px; background: var(--pink); transition: width 0.5s ease-out; }
+
+.label { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; color: var(--muted); }
+.cats { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  border: 2px solid var(--line);
+  background: var(--card);
+  border-radius: 999px;
+  padding: 3px 12px 5px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  transition: transform 0.1s;
+}
+.chip:hover { transform: translateY(-2px); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+
+.levels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.lvl {
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  padding: 6px 4px 8px;
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+.lvl .pips { display: flex; gap: 3px; direction: ltr; }
+.lvl .pips b { width: 8px; height: 12px; border-radius: 2px; background: var(--bg-dot); }
+.lvl .pips b.on { background: var(--pink); }
+.lvl[aria-pressed="true"] { background: var(--sun); color: var(--on-color); box-shadow: inset 0 -4px 0 rgba(0,0,0,0.15); }
+.lvl[aria-pressed="true"] .pips b { background: rgba(42,15,46,0.2); }
+.lvl[aria-pressed="true"] .pips b.on { background: var(--on-color); }
+
+.card {
+  position: relative;
+  min-height: 210px;
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  padding: 26px 22px 22px;
+  border: 3px solid var(--line);
+  border-radius: 18px;
+  background: var(--pink-soft);
+  overflow: hidden;
+}
+.card.nur { background: var(--nur-bg); color: var(--nur-ink); border-color: var(--nur-line); }
+.card.soft { background: var(--blue-soft); }
+.card.fusha { background: var(--sun-soft); }
+.card-top { display: flex; justify-content: space-between; gap: 8px; font-size: 0.82rem; font-weight: 700; color: var(--muted); }
+.card.nur .card-top { color: var(--nur-ink); opacity: 0.75; }
+.phrase {
+  margin: 0;
+  font-size: clamp(1.35rem, 4.6vw, 1.9rem);
+  font-weight: 800;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+.card.crazy .phrase { font-size: clamp(1.5rem, 5.4vw, 2.2rem); }
+.card.nur .phrase, .card.fusha .phrase.classic {
+  font-family: var(--classic);
+  font-weight: 400;
+  font-size: clamp(1.35rem, 4.4vw, 1.75rem);
+  line-height: 2;
+}
+.card.fusha .phrase.classic { font-weight: 700; }
+.src { margin: 0; font-size: 0.9rem; font-weight: 700; color: var(--gold); }
+.card.fusha .src { color: var(--muted); }
+.burst {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 104px;
+  height: 104px;
+  display: grid;
+  place-items: center;
+  background: var(--sun);
+  color: var(--on-color);
+  font-family: var(--display);
+  font-size: 1.1rem;
+  line-height: 1;
+  text-align: center;
+  clip-path: polygon(50% 0, 61% 18%, 82% 8%, 80% 30%, 100% 36%, 85% 52%, 98% 70%, 76% 72%, 76% 94%, 58% 82%, 44% 100%, 36% 80%, 14% 90%, 18% 68%, 0 58%, 16% 44%, 4% 24%, 26% 24%, 26% 4%, 42% 16%);
+  transform: rotate(-12deg);
+  pointer-events: none;
+}
+.card.has-burst { padding-top: 64px; }
+.pop { animation: pop 0.35s cubic-bezier(.2,1.5,.4,1); }
+@keyframes pop { from { transform: scale(0.92); opacity: 0.2; } }
+.shake1 { animation: sh1 0.35s linear; }
+.shake2 { animation: sh2 0.45s linear 2; }
+.shake3 { animation: sh3 0.4s linear 3; }
+@keyframes sh1 { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+@keyframes sh2 { 20% { transform: translate(-7px, 2px) rotate(-1deg); } 50% { transform: translate(6px, -2px) rotate(1deg); } 80% { transform: translate(-4px, 1px); } }
+@keyframes sh3 { 15% { transform: translate(-10px, 3px) rotate(-2deg) scale(1.02); } 40% { transform: translate(9px, -4px) rotate(2deg); } 65% { transform: translate(-7px, 2px) rotate(-1deg); } 85% { transform: translate(5px, 0) rotate(1deg); } }
+
+.actions { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; }
+.big {
+  border: 3px solid var(--line);
+  border-radius: 16px;
+  background: var(--sun);
+  color: var(--on-color);
+  font-family: var(--display);
+  font-size: 1.45rem;
+  line-height: 1.3;
+  padding: 10px 16px 12px;
+  box-shadow: 0 6px 0 var(--shadow);
+  transition: transform 0.08s, box-shadow 0.08s;
+}
+.big:active { transform: translateY(5px); box-shadow: 0 1px 0 var(--shadow); }
+.ghost {
+  border: 3px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+  font-weight: 800;
+  padding: 8px 14px;
+  box-shadow: 0 4px 0 var(--shadow);
+}
+.ghost:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--shadow); }
+.ghost.on { background: var(--pink); color: #fff; }
+.soft-note { margin: -6px 0 0; font-size: 0.88rem; color: var(--muted); }
+
+/* Tools grid */
+.tools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.tool { padding: 18px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.tool.wide { grid-column: 1 / -1; }
+.tool h3 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 1.35rem; line-height: 1.3; }
+.tool p.lead { margin: -6px 0 0; color: var(--muted); font-size: 0.92rem; }
+.btn {
+  justify-self: start;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: var(--ink);
+  color: var(--bg);
+  font-weight: 800;
+  padding: 5px 16px 7px;
+  box-shadow: 0 3px 0 var(--pink);
+}
+.btn:active { transform: translateY(2px); box-shadow: none; }
+.btn.alt { background: var(--card); color: var(--ink); box-shadow: 0 3px 0 var(--shadow); }
+
+/* Ring */
+.ring-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: end; }
+.field { display: grid; gap: 4px; min-width: 0; }
+.field input {
+  width: 100%;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+  padding: 7px 12px;
+  font-weight: 700;
+}
+.arena {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  padding: 14px;
+  border: 2px dashed var(--line);
+  border-radius: 14px;
+  background: var(--blue-soft);
+  overflow: hidden;
+}
+.bag {
+  width: 86px;
+  height: 120px;
+  border: 3px solid var(--line);
+  border-radius: 34px 34px 40px 40px;
+  background: var(--pink);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: var(--display);
+  font-size: 1.6rem;
+  transform-origin: 50% -30px;
+}
+.bag.hit { animation: swing 0.45s ease-out; }
+@keyframes swing { 30% { transform: rotate(14deg); } 65% { transform: rotate(-6deg); } }
+.bag.ko { background: var(--muted); transform: rotate(80deg) translateY(10px); transition: transform 0.5s; }
+.hp { display: grid; gap: 6px; min-width: 0; }
+.hp-top { display: flex; justify-content: space-between; gap: 8px; font-weight: 700; font-size: 0.9rem; }
+.hp-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.hp .bar i { background: var(--mint); width: 100%; }
+.hp-line { margin: 0; font-weight: 800; min-height: 1.6em; }
+.hit-pop {
+  position: absolute;
+  font-family: var(--display);
+  font-size: 1.4rem;
+  color: var(--pink);
+  text-shadow: 2px 2px 0 var(--shadow);
+  pointer-events: none;
+  animation: rise 0.8s ease-out forwards;
+}
+@keyframes rise { to { transform: translateY(-46px) rotate(-8deg); opacity: 0; } }
+
+/* SOS */
+.sos-panel { display: grid; gap: 12px; justify-items: center; text-align: center; }
+.breath {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--line);
+  background: var(--mint-soft);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  transform: scale(0.7);
+  transition: transform 4s ease-in-out;
+}
+.breath.in { transform: scale(1); }
+.breath.out { transform: scale(0.7); transition-duration: 6s; }
+.sos-line { margin: 0; font-weight: 700; }
+.mini-nur {
+  margin: 0;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--nur-bg);
+  color: var(--nur-ink);
+  border: 2px solid var(--nur-line);
+  font-family: var(--classic);
+  font-size: 1.12rem;
+  line-height: 1.95;
+}
+.mini-nur small { display: block; font-family: var(--body); font-size: 0.8rem; font-weight: 700; color: var(--gold); line-height: 1.5; }
+
+/* Receipt */
+.paper {
+  background: var(--bg);
+  border: 2px solid var(--line);
+  border-radius: 6px;
+  padding: 14px 14px 18px;
+  display: grid;
+  gap: 6px;
+  font-size: 0.92rem;
+}
+.paper .p-head { text-align: center; font-family: var(--display); font-size: 1.15rem; line-height: 1.3; }
+.paper .p-meta { display: flex; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 0.78rem; font-variant-numeric: tabular-nums; border-bottom: 2px dashed var(--line); padding-bottom: 6px; }
+.paper .row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 8px; align-items: baseline; }
+.paper .row span:nth-child(2) { color: var(--muted); font-variant-numeric: tabular-nums; }
+.paper .row span:last-child { font-weight: 800; }
+.paper .total { border-top: 2px dashed var(--line); padding-top: 6px; display: flex; justify-content: space-between; gap: 8px; font-weight: 800; }
+.paper .foot { color: var(--muted); font-size: 0.8rem; text-align: center; }
+
+/* Cappuccino */
+.cup { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px; align-items: start; }
+.mug { width: 64px; height: 58px; position: relative; margin-top: 10px; }
+.mug::before {
+  content: "";
+  position: absolute;
+  inset: 8px 10px 0 0;
+  border: 3px solid var(--line);
+  border-top: 0;
+  border-radius: 0 0 22px 22px;
+  background: linear-gradient(var(--sun-soft) 0 26%, #c08a5a 26%);
+}
+.mug::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -2px;
+  width: 16px;
+  height: 22px;
+  border: 3px solid var(--line);
+  border-right: 0;
+  border-radius: 12px 0 0 12px;
+}
+.recipe { margin: 0; padding: 0 18px 0 0; display: grid; gap: 2px; }
+.recipe li::marker { color: var(--pink); }
+.recipe-end { margin: 6px 0 0; font-weight: 800; }
+
+/* Certificate */
+.cert-paper {
+  border: 3px double var(--gold);
+  outline: 2px solid var(--line);
+  outline-offset: -9px;
+  border-radius: 6px;
+  background: var(--sun-soft);
+  padding: 20px 18px;
+  text-align: center;
+  font-family: var(--classic);
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+.cert-paper b.title { display: block; font-size: 1.35rem; color: var(--pink); margin: 4px 0; }
+.cert-paper .sig { display: flex; justify-content: space-between; gap: 8px; margin-top: 10px; font-family: var(--body); font-size: 0.78rem; color: var(--muted); }
+
+/* Nur notebook */
+.nur-sec {
+  background: var(--nur-bg);
+  color: var(--nur-ink);
+  border: 3px solid var(--nur-line);
+  border-radius: 22px;
+  padding: 20px;
+  display: grid;
+  gap: 14px;
+}
+.nur-sec .sec-sub { color: var(--nur-ink); opacity: 0.8; }
+.today {
+  border: 2px solid var(--nur-line);
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: var(--card);
+  display: grid;
+  gap: 4px;
+}
+.today .label { color: var(--gold); }
+.today p { margin: 0; font-family: var(--classic); font-size: 1.3rem; line-height: 2; color: var(--ink); }
+.nur-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.nur-filters .chip { border-color: var(--nur-line); background: transparent; color: var(--nur-ink); }
+.nur-filters .chip[aria-pressed="true"] { background: var(--nur-ink); color: var(--nur-bg); }
+.nur-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.nur-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--nur-line);
+}
+.nur-item:last-child { border-bottom: 0; }
+.nur-item .t { margin: 0; font-family: var(--classic); font-size: 1.2rem; line-height: 2; grid-column: 1; }
+.nur-item .s { grid-column: 1; font-size: 0.82rem; font-weight: 700; color: var(--gold); }
+.nur-item .k {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: start;
+  border: 2px solid var(--nur-line);
+  background: transparent;
+  color: var(--nur-ink);
+  border-radius: 10px;
+  padding: 2px 10px 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.nur-note { margin: 0; font-size: 0.82rem; opacity: 0.85; }
+
+/* Favorites */
+.favs { padding: 18px; display: grid; gap: 10px; }
+.fav-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.fav-list li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px dashed var(--line); }
+.fav-list li:last-child { border-bottom: 0; }
+.fav-list li span { font-weight: 700; min-width: 0; overflow-wrap: anywhere; }
+.fav-list button { border: 2px solid var(--line); background: transparent; border-radius: 10px; padding: 0 10px 2px; font-weight: 700; font-size: 0.82rem; }
+.empty { margin: 0; color: var(--muted); }
+
+footer { text-align: center; color: var(--muted); font-size: 0.88rem; display: grid; gap: 4px; }
+footer b { font-family: var(--display); font-weight: 400; font-size: 1.1rem; color: var(--ink); }
+
+/* Toast + confetti */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  transform: translate(-50%, 140%);
+  background: var(--ink);
+  color: var(--bg);
+  border-radius: 999px;
+  padding: 6px 18px 8px;
+  font-weight: 800;
+  transition: transform 0.25s;
+  z-index: 20;
+  max-width: calc(100% - 32px);
+  text-align: center;
+}
+.toast.show { transform: translate(-50%, 0); }
+.confetti { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 15; }
+.confetti i { position: absolute; top: -20px; width: 10px; height: 16px; border-radius: 2px; animation: fall 1.6s ease-in forwards; }
+.confetti i:nth-child(4n) { background: var(--pink); }
+.confetti i:nth-child(4n+1) { background: var(--sun); }
+.confetti i:nth-child(4n+2) { background: var(--blue); }
+.confetti i:nth-child(4n+3) { background: var(--mint); }
+@keyframes fall { to { transform: translateY(105vh) rotate(540deg); } }
+
+@media (max-width: 600px) {
+  .tools { grid-template-columns: minmax(0, 1fr); }
+  .actions { grid-template-columns: 1fr 1fr; }
+  .actions .big { grid-column: 1 / -1; }
+  .machine, .nur-sec { padding: 16px; }
+  .levels .lvl { font-size: 0.8rem; }
+  .ring-row { grid-template-columns: minmax(0, 1fr); }
+  .ring-row .btn { justify-self: stretch; }
+  .arena { grid-template-columns: minmax(0, 1fr); justify-items: center; }
+  .hp { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <span class="badge">نسخة خاصة · سعاد فقط</span>
+    <h1>الداعم المعنوي <span class="violent">العنيف</span></h1>
+    <p class="tag">جرعات دعم بعيار ثقيل، ضحك كرايزيي، فصحى فخمة، وأدعية من القرآن والصحيحين. ممنوع الاستسلام بأمر من الإدارة.</p>
+  </header>
+
+  <section class="machine sticker" id="machine" aria-labelledby="mTitle">
+    <div class="m-head">
+      <h2 id="mTitle">آلة الدعم</h2>
+      <div class="morale" aria-live="polite">
+        <div class="morale-top"><span>معنويات اليوم</span><span id="rank">لسّه بنسخّن</span></div>
+        <div class="bar"><i id="moraleFill"></i></div>
+      </div>
+    </div>
+
+    <div class="label">اختاري القسم</div>
+    <div class="cats" id="cats"></div>
+
+    <div class="label">مستوى العنف</div>
+    <div class="levels" id="levels"></div>
+
+    <article class="card" id="card" aria-live="polite">
+      <div class="burst" id="burst" hidden>بعنف!</div>
+      <div class="card-top" id="cardTop"><span><span id="catTag">ترحيب</span> · <span id="doseNo">الجرعة رقم 0</span></span></div>
+      <p class="phrase" id="phrase">أهلين سعاد. الدعم المعنوي وصل، وبعنف.</p>
+      <p class="src" id="src" hidden></p>
+    </article>
+
+    <div class="actions">
+      <button class="big" id="go" type="button">ادعمني بعنف</button>
+      <button class="ghost" id="copy" type="button">نسخ</button>
+      <button class="ghost" id="fav" type="button">♡ حفظ</button>
+    </div>
+    <p class="soft-note" id="softNote" hidden></p>
+  </section>
+
+  <section class="tools" aria-label="أدوات الدعم">
+    <article class="tool wide sticker">
+      <h3>حلبة المشاكل</h3>
+      <p class="lead">اكتبي اسم المشكلة، واضربيها لحد ما تطيح.</p>
+      <div class="ring-row">
+        <label class="field" for="problem"><span class="label">اسم المشكلة</span>
+          <input id="problem" type="text" maxlength="40" value="المهام المتأخرة" autocomplete="off">
+        </label>
+        <button class="btn" id="punch" type="button">اضربيها!</button>
+      </div>
+      <div class="arena" id="arena">
+        <div class="bag" id="bag" aria-hidden="true">!!</div>
+        <div class="hp">
+          <div class="hp-top"><span class="hp-name" id="hpName">المهام المتأخرة</span><span id="hpNum">100%</span></div>
+          <div class="bar"><i id="hpFill"></i></div>
+          <p class="hp-line" id="hpLine" aria-live="polite">المشكلة واقفة وخايفة. ابدئي.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="tool sticker">
+      <h3>زر الطوارئ</h3>
+      <p class="lead">لليوم الثقيل. تنفّسي معي، والباقي علينا.</p>
+      <div class="sos-panel" id="sosPanel">
+        <div class="breath" id="breath">جاهزة؟</div>
+        <p class="sos-line" id="sosLine">مش لازم تحلّي كل إشي هلأ. بس تنفّسي.</p>
+        <p class="mini-nur" id="sosNur" hidden></p>
+      </div>
+      <button class="btn" id="sos" type="button">ابدئي التنفّس</button>
+    </article>
+
+    <article class="tool sticker">
+      <h3>فاتورة الدعم</h3>
+      <p class="lead">كل الدعم اللي وصلك، مفصّل وبالأسعار.</p>
+      <div class="paper" id="receipt"></div>
+      <button class="btn alt" id="newReceipt" type="button">اطبعيلي فاتورة جديدة</button>
+    </article>
+
+    <article class="tool sticker">
+      <h3>وصفة كابتشينو معنوي</h3>
+      <p class="lead">بدون ولا حبة توتر.</p>
+      <div class="cup">
+        <div class="mug" aria-hidden="true"></div>
+        <div>
+          <ol class="recipe" id="recipe"></ol>
+          <p class="recipe-end" id="recipeEnd"></p>
+        </div>
+      </div>
+      <button class="btn alt" id="newRecipe" type="button">وصفة ثانية</button>
+    </article>
+
+    <article class="tool sticker">
+      <h3>شهادة رسمية</h3>
+      <p class="lead">بالفصحى، ومختومة بختم الإدارة.</p>
+      <div class="cert-paper" id="cert"></div>
+      <button class="btn alt" id="newCert" type="button">لقب جديد</button>
+    </article>
+  </section>
+
+  <section class="nur-sec" aria-labelledby="nurTitle">
+    <div class="sec-head">
+      <h2 id="nurTitle">دفتر النور</h2>
+      <p class="sec-sub">أدعية وآيات وأحاديث، كلها من القرآن الكريم وصحيحَي البخاري ومسلم.</p>
+    </div>
+    <div class="today">
+      <span class="label">دعاء اليوم</span>
+      <p id="todayT"></p>
+      <span class="src" id="todayS"></span>
+    </div>
+    <div class="nur-filters" id="nurFilters"></div>
+    <ul class="nur-list" id="nurList"></ul>
+    <p class="nur-note">أرقام الأحاديث بترقيم فتح الباري لصحيح البخاري، وترقيم محمد فؤاد عبد الباقي لصحيح مسلم. «متفق عليه» يعني رواه البخاري ومسلم كلاهما.</p>
+  </section>
+
+  <section class="favs sticker" aria-labelledby="favTitle">
+    <h2 id="favTitle">المحفوظات</h2>
+    <ul class="fav-list" id="favList"></ul>
+    <p class="empty" id="favEmpty">لسّه ما حفظتي إشي. اضغطي «♡ حفظ» على أي جملة بتعجبك، وبتلاقيها هون.</p>
+  </section>
+
+  <footer>
+    <b>صُنع بعنف، ومحبة، ورغوة كابتشينو</b>
+    <span>العنف هون معنوي بس.</span>
+  </footer>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<div class="confetti" id="confetti" aria-hidden="true"></div>
+
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  document.documentElement.setAttribute("dir", "rtl");
+  document.documentElement.setAttribute("lang", "ar");
+  var calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
+  function store(k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null; } }
+
+  /* ============ المحتوى ============ */
+
+  var VIOLENT = [
+    "سعاد، إنتي قدّها. بعنف.",
+    "الدنيا صعبة؟ إنتي أصعب.",
+    "المشكلة شافتك جاية، ورجعت لورا.",
+    "إنتي مش بس قدّها، إنتي قدّها وقدود وقدود القدود.",
+    "اليوم مش رح يمشي عليكي، إنتي اللي رح تمشي عليه.",
+    "التعب نفسه بيتعب لما يشوفك.",
+    "الخوف بيستأذن قبل ما يقرّب منك.",
+    "مين قال مستحيل؟ خلّيه يحكي معي.",
+    "الجحيم أجل! سعاد داخلة.",
+    "إنتي مش بتحاولي، إنتي بتهجمي.",
+    "وقفي، تنفّسي، وكسّري الدنيا.",
+    "الصعوبات فتحت جروب اسمه «خايفين من سعاد».",
+    "خلّي الإنجاز يتعب من كثر ما بتلحقيه.",
+    "الطريق طويل؟ ممتاز، فرصة تفرجيه مين إنتي.",
+    "مش مطلوب تكوني جاهزة. مطلوب تبلّشي.",
+    "خطوة وحدة، بعدين خطوة كمان، بعدين الدنيا كلها.",
+    "اللي بيوقف قدّامك، بيوقف عالجنب.",
+    "إنتي النسخة المحدّثة من القوة، وبدون إعلانات.",
+    "حتى الجبال بتفتحلك الطريق.",
+    "اليوم رح نكسب. مش رح نناقش.",
+    "شدّي حيلك! مشدود؟ شدّيه كمان.",
+    "ما في إشي اسمه ما بقدر. في إشي اسمه لسّه.",
+    "قلبك قوي، عقلك أقوى، وعنادك؟ أويلييي.",
+    "إذا وقعتي، اوقعي لقدّام، وقومي أسرع.",
+    "التحدّي اللي قدّامك عامل حاله كبير. صغّريه.",
+    "الجحيم أجل، هاد يومك.",
+    "كرايزيي كيف إنك لسّه مكمّلة. احترام.",
+    "إنتي العاصفة، والباقي مجرد طقس.",
+    "رجّعي كتافك لورا، ارفعي راسك، وفوتي.",
+    "مش رح نستسلم، ولا حتى بالغلط.",
+    "خلّيهم يقولوا صعب. إنتي قولي: ماشي، وبعدين؟",
+    "سعاد وضع الهجوم: مفعّل.",
+    "إذا الحظ ما إجا، روحي جيبيه من إيده.",
+    "إنتي مش في السباق عشان تشاركي. إنتي فيه عشان تخلّصيه."
+  ];
+
+  var CAPP = [
+    "صباح الخير يا سعاد. الكابتشينو جاهز، والمعنويات أجهز.",
+    "إنتي زي الكابتشينو: رغوة لطيفة من فوق، وقوّة حقيقية من تحت.",
+    "اصحي، الدنيا مستنيتك تفرجيها شغلك.",
+    "صباح الإنجازات، صباح الرغوة، صباح سعاد.",
+    "اليوم جديد ولسّه ما حدا خرّبه. خلّيكي إنتي أول من يزبّطه.",
+    "رشّة قرفة على الكابتشينو، ورشّة ثقة على القلب.",
+    "الصباح إله ريحة البدايات، وإنتي إلك ريحة النجاح.",
+    "افتحي الشباك، خلّي الشمس تشوف مين صحيت بطلة.",
+    "كابتشينو كبير، ونيّة أكبر.",
+    "المنبّه رنّ؟ هاد مش إزعاج، هاد صافرة البداية.",
+    "اليوم بدنا نعمل إشي واحد عالأقل يفرّحك.",
+    "صباحك رغوة ناعمة بدون ولا فقاعة توتّر.",
+    "ابدئي بابتسامة، والباقي بيلحقك.",
+    "سعاد + كابتشينو = خطر على كل المهام المتأخرة.",
+    "الرغوة بتطلع لفوق لحالها، زيّك بالضبط.",
+    "أول رشفة نيّة حلوة، وثاني رشفة خطّة.",
+    "الشمس طلعت، بس مستنية تأكيد منك.",
+    "رسميًا: الدوام بلّش، والدعم شغّال.",
+    "صباح الخير. اليوم في احتمال كبير لأخبار حلوة.",
+    "كوب كابتشينو، ونفس عميق، ويلا على المعركة.",
+    "الكابتشينو بيقلّك: اشربيني بهدوء، واهجمي بعنف."
+  ];
+
+  var FOCUS = [
+    "افتحي الكتاب. الكتاب خايف منك أصلًا.",
+    "ساعة تركيز وحدة أحسن من خمس ساعات تفكير بالتركيز.",
+    "حطّي الجوال على وضع الطيران، وخلّي عقلك هو اللي يطير.",
+    "المهمّة كبيرة؟ قطّعيها زي البيتزا.",
+    "مش لازم تخلّصي كل إشي اليوم. لازم بس تبلّشي.",
+    "كل صفحة بتقريها طوبة بقصرك.",
+    "الامتحان عامل حاله صعب، بس هو بالآخر ورقة.",
+    "25 دقيقة شغل، 5 دقايق راحة، وكرّري لحد ما المهام تستسلم.",
+    "الدماغ عضلة، واليوم يوم تمرين.",
+    "الملل جزء من الطريق، مش علامة إنك غلطانة.",
+    "اللي بتذاكر وهي تعبانة بطلة، واللي بترتاح عشان تكمّل ذكية.",
+    "سؤال صعب؟ تجاوزيه وارجعيله، مش رايح بمحل.",
+    "الموعد النهائي بيقرّب؟ وإنتي كمان بتقرّبي، وبسرعة أكبر.",
+    "اكتبي قائمة، اشطبي أول بند، واحتفلي كأنك ربحتي كاس العالم.",
+    "التسويف بيقول «بكرا». إنتي بتقولي «هلأ».",
+    "ركّزي، الإنجاز على بعد ثلاث فقرات.",
+    "إنتي مش متأخرة، إنتي بس ماخدة طريق ثاني.",
+    "ما في سؤال غبي. في جواب لسّه ما وصل.",
+    "الصفحة الفاضية مش عدوّتك، هي ملعبك.",
+    "اشربي مي، افردي ضهرك، وكمّلي يا وحش.",
+    "المعلومة اللي بتتعبي عليها اليوم، بتنقذك بكرا.",
+    "كل ما تقولي «ما فهمت»، إنتي فعليًا على وشك تفهمي.",
+    "خلّصي الأصعب أول، والباقي بيصير تحلاية.",
+    "سكّري التابات الزيادة. كلها، إلا تاب النجاح."
+  ];
+
+  var FUNNY = [
+    "لو الشطارة رياضة أولمبية، كان معك 12 ميدالية وواحدة احتياط.",
+    "المشاكل بتحكي عنك: «بلاش نقرّب، هاي سعاد».",
+    "الهمّ شافك، لبس شبشبه وهرب.",
+    "التوتّر قرّر ياخد إجازة مفتوحة. قال ما إله شغل عندك.",
+    "تمّ رصد كمية شطارة غير طبيعية بالمنطقة. المصدر: سعاد.",
+    "خبر عاجل: سعاد قرّرت تكمّل، والصعوبات بحالة صدمة.",
+    "أويلييي! حتى الآلة الحاسبة ما قدرت تحسب قدّيش إنتي قدّها.",
+    "الكسل طلب لقاء معك. رفضنا الطلب.",
+    "لو الثقة بتنباع، كان فتحتي فرع ثاني.",
+    "عملنا استفتاء: 100% من المشاكل خايفة منك. الباقي ما ردّ.",
+    "إنتي مش متأخرة، الوقت هو اللي مستعجل.",
+    "سمعت إن الجاذبية بتتعب لما تحاول تنزّل معنوياتك.",
+    "الإشارة الحمرا بتصير خضرا من الإحراج لما تشوفك.",
+    "الواي فاي فصل؟ عادي، إنتي مصدر الإشارة.",
+    "أويلييي على التركيز، حتى الذبّان بطّل يقرّب.",
+    "المهام المتأخرة عملت اجتماع طارئ عنوانه: سعاد صحيت.",
+    "الكرسي اللي بتقعدي عليه صار يحسّ حاله مهم.",
+    "الكابتشينو طلب توقيعك.",
+    "قالولنا الدعم المعنوي لازم يكون لطيف. ضحكنا.",
+    "قلم الرصاص لما بيكتب اسمك بيتحوّل لحبر، من الاحترام.",
+    "الصعوبات بتخوّف ولادها: إذا ما نمتوا بنجيبلكم سعاد.",
+    "كعب بن زهير قال «بانت سعادُ». غلطان، سعاد ما بانت، سعاد حضرت وكسّرت الدنيا.",
+    "لو حياتك فيلم، هاد المشهد اللي بتطلع فيه الموسيقى الحماسية.",
+    "حتى البطارية بتشحن أسرع لما تكون جنبك.",
+    "الأحد بيخاف منك، والخميس بيحبّك.",
+    "صار عندك معجبين: كل المهام اللي خلّصتيها.",
+    "رسالة من المشكلة: «ممكن نحكي بهدوء؟». الجواب: لا. بعنف.",
+    "قرّرنا نسمّي إعصار باسمك، بس الإعصار رفض، قال ما بقدر أوصل لمستواها."
+  ];
+
+  var SOFT = [
+    "مش لازم تكوني قوية طول الوقت. حتى البطلات بيقعدوا.",
+    "اليوم ثقيل؟ عادي، بكرا بيجي أخفّ.",
+    "خدي نفس عميق... كمان واحد... هيك أحسن.",
+    "مش ضروري تحلّي كل إشي الليلة.",
+    "الزعل ضيف، بيقعد شوي وبيروح.",
+    "إنتي مش متأخرة عن حدا. إنتي ماشية على وقتك.",
+    "دموعك مش ضعف، هي بس قلبك بيرتّب حاله.",
+    "قدّ ما كان اليوم صعب، إنتي عدّيتي منه.",
+    "ارتاحي. العالم بيقدر يستنّى شوي.",
+    "ولا غلطة وحدة بتلغي تعبك كله.",
+    "اشربي مي، كلي إشي، ونامي منيح. هاي مش رفاهية، هاي صيانة.",
+    "حطّي إيدك على قلبك وقولي: الحمد لله، لسّه بنحاول.",
+    "مرّيتي بأيام أصعب وطلعتي منها، وهاد يوم منهم.",
+    "مش كل الأيام بتنكسب، بس كل الأيام بتخلص.",
+    "الغيمة ما بتضلّ فوق نفس البيت للأبد.",
+    "إنتي أغلى من إنك تقسي على حالك.",
+    "إذا حاسّة إنك تعبانة، معناها إنك كنتي بتحاولي.",
+    "خفّفي على حالك، الكمال مش شرط.",
+    "بعد العسر يسر، وهاد مش كلامي، هاد وعد ربّنا.",
+    "الليلة صعبة؟ الفجر ما بيتأخّر.",
+    "إحنا معك، حتى لو بصمت.",
+    "مسموح توقفي شوي. الممنوع بس إنك تنسي قدّيش إنتي قويّة.",
+    "خطوة صغيرة اليوم أحسن من ولا إشي. وولا إشي برضو مقبول اليوم."
+  ];
+
+  var PARTY = [
+    "أويلييي! شو هالإنجاز؟",
+    "الجحيم أجل! عملتيها!",
+    "سجّلوا عندكم: سعاد ربحت مرّة كمان.",
+    "زغرودة رسمية من إدارة الدعم: لولولولولييييي!",
+    "كرايزيي! مش مصدّقين قدّيش إنتي قدّها.",
+    "لازم نعمللك تمثال، بس الرخام غالي، خلّيها صورة.",
+    "ما في إنجاز صغير. في احتفال صغير بس.",
+    "تمّت إضافة هالإنجاز لأرشيف الأساطير.",
+    "صفّقوا لها! ... أكثر! ... بعنف!",
+    "قلنالك إنك قدّها. ومين طلع صح؟",
+    "الكابتشينو اليوم على حساب الإنجاز.",
+    "يا بنت، إنتي مش طبيعية. بالمعنى الحلو.",
+    "مبروك! والجاي أكبر، إن شاء الله.",
+    "هالإنجاز بيستاهل رقصة صغيرة بالمطبخ.",
+    "رح نعلّق الخبر على باب الثلاجة.",
+    "خلّي ذكرى هاليوم بجيبتك، وطلّعيها لما تشكّي بحالك.",
+    "أويلييي على الشطارة! وين كنتي مخبّيتها؟",
+    "إنتي عملتيها. مش الحظ، مش الصدفة. إنتي.",
+    "جدول اليوم: احتفال، ثم احتفال، ثم نوم.",
+    "الجحيم أجل، وقولي الحمد لله.",
+    "قدّمنا طلب رسمي إنه هاليوم يصير عطلة وطنية."
+  ];
+
+  var NIGHT = [
+    "نامي يا سعاد. بكرا إلك، مش عليكي.",
+    "سكّري الجوال. الدنيا بتكمّل لحالها لبكرا الصبح.",
+    "خلّصتي اليوم، وهاد بحدّ ذاته إنجاز.",
+    "حطّي همّك على الرف، بكرا بنشوفه سوا.",
+    "نامي وإنتي فخورة، حتى لو بإشي صغير.",
+    "المخدّة بتستناكي، والأحلام عاملة طابور.",
+    "تصبحي على يوم أحلى من اليوم.",
+    "اللي ما خلص اليوم بيستنّى. ما رح يهرب.",
+    "اقري آية الكرسي والمعوّذات، ونامي وإنتي مطمّنة.",
+    "غمّضي عيونك وعدّي ثلاث أشياء حلوة صارت اليوم.",
+    "الليل للراحة، مش لمراجعة كل غلطة من سنة 2015.",
+    "نوم عميق، أحلام كرايزيي، وصحيان بعنف.",
+    "بكرا الصبح: كابتشينو وبداية جديدة.",
+    "نامي بكّير، المعنويات بتنشحن بالليل.",
+    "قولي: اللهمّ باسمك أموت وأحيا، ونامي بأمان الله."
+  ];
+
+  var FACTS = [
+    "أثبتت دراسة غير موجودة إن ضحكة سعاد بترفع شحن الجوالات القريبة 3%.",
+    "مركز الأرصاد المعنوي: شطارة 100% اليوم، مع رياح إصرار عنيفة.",
+    "اكتشف العلماء إن اسم «سعاد» من السعادة. مش صدفة. أبدًا.",
+    "معلومة: الكسل بيخسر 40% من قوّته إذا سمع خطوات سعاد.",
+    "دراسة يابانية مزيّفة: 9 من كل 10 مشاكل بتنحلّ لحالها لما سعاد تقول «يلا».",
+    "علميًا: الكابتشينو بيصير أطيب 7 مرات إذا انشرب بعد إنجاز.",
+    "الفيزياء بتقول: الجسم المتحرّك بيضلّ متحرّك. وسعاد جسم متحرّك بعنف.",
+    "تمّ قياس سرعة سعاد لما تقرّر: أسرع من الإشاعة بالأردن.",
+    "حقيقة: المشاكل بالخيال أكبر بـ300% من الواقع. المصدر: الخبرة.",
+    "قانون نيوتن الرابع: لكل مشكلة سعاد مساوية لها بالمقدار، ومعاكسة لها بالاتجاه، وأقوى منها بشوي.",
+    "أكّدت الجمعية الفلكية ظهور نجم جديد اليوم. تبيّن إنها سعاد صاحية مبسوطة.",
+    "الإحصائيات بتقول: الأيام اللي بتبلّش بابتسامة بتخلص بإنجاز. نسبة الخطأ صفر، لأنو إحنا اللي عملنا الإحصائية.",
+    "الجدول الدوري أضاف عنصر «السعاديوم»: عديم التفاعل مع الإحباط.",
+    "خبراء الطقس: احتمال تساقط إنجازات اليوم مرتفع جدًا.",
+    "علم النفس المزيّف: اللي بيقرأ هالجملة رح يبتسم خلال 3 ثواني. 3... 2..."
+  ];
+
+  var PRAISE = [
+    "عقلك شغّال أسرع من أي معالج بالسوق.",
+    "إنتي من الناس اللي وجودهم بيخفّف الحِمل عن غيرهم.",
+    "ذوقك بالأشياء بيعطي الأشياء قيمة.",
+    "طيبتك مش ضعف. طيبتك قوّة بشكل مهذّب.",
+    "إنتي من النوع اللي بيوعد وبيوفي. نادر.",
+    "ضحكتك معدية، بالمعنى الإيجابي.",
+    "أسئلتك دايمًا بمحلّها، وهاد ذكاء.",
+    "إنتي بتعرفي تحوّلي الفوضى لخطّة.",
+    "قويّة بطريقة هادية، وهاي أخطر أنواع القوّة.",
+    "شغلك بيحكي عنك قبل ما تحكي.",
+    "حتى لما بتتعبي، بتضلّي لطيفة مع الناس. احترام.",
+    "عنادك بالخير موهبة.",
+    "مرتّبة من جوّا، حتى لو الغرفة مش مرتّبة.",
+    "اللي بيعرفك محظوظ، واللي ما بيعرفك فاته كثير.",
+    "بتسمعي منيح، وهاد صار عملة نادرة.",
+    "إنتي بنت كلمة، والكلمة بتعرف قيمتك."
+  ];
+
+  var FUSHA = [
+    "يا سعادُ، إنَّ العزيمةَ إذا صدقتْ لانَ لها الحديد.",
+    "امضي، فإنَّ الطريقَ لا يُقطَعُ بالوقوفِ عند أوّلِه.",
+    "ليسَ العيبُ أن تتعثّري، إنّما العيبُ أن تستطيبي البقاءَ على الأرض.",
+    "إنَّ في صبرِكِ اليومَ بذورَ فرحِكِ غدًا.",
+    "ما خُلقتِ لتكوني نسخةً من أحد، فكوني أنتِ على أتمِّ وجه.",
+    "قليلٌ دائمٌ خيرٌ من كثيرٍ منقطع.",
+    "مَن جدَّ وجد، ومَن زرعَ حصد، ومَن سارَ على الدربِ وصل.",
+    "لا تستصغري خطوةً، فما البحرُ إلّا قطراتٌ اجتمعت.",
+    "إنَّ الهمّةَ العاليةَ تُصغِّرُ الجبال، وإنَّ اليأسَ يُعظِّمُ الحصى.",
+    "إذا أظلمَ الليلُ، فاعلمي أنَّ الفجرَ قد شدَّ رحالَه إليكِ.",
+    "الأيّامُ دُوَل، والصبرُ مفتاحُ الفرج.",
+    "اجعلي من كلِّ عثرةٍ درجةً، ومن كلِّ دمعةٍ سُقيا لزرعِ الغد.",
+    "رُبَّ ضارّةٍ نافعة، ورُبَّ تأخيرٍ فيه خيرٌ كثير.",
+    "لا يُدرَكُ المجدُ بالأماني، وإنّما بالسعيِ والسهر.",
+    "الغيمُ لا يدوم، والشمسُ لا تُحجَبُ إلى الأبد.",
+    "تقدّمي واثقةً، فمَن خافَ الطريقَ لم يبلغِ المنزل.",
+    "إنَّ القلبَ الذي يتوكّلُ على اللهِ لا يُهزَم.",
+    "خيرُ الأمورِ ما بدأتِه اليوم، لا ما أجّلتِه إلى الغد.",
+    "يا سعادُ، ما بانتْ سعاد، بل حضرت، فارتعدت لحضورِها الصعاب.",
+    "الكلمةُ الطيّبةُ صدقة، وهذه صدقتي عليكِ: أنتِ رائعة.",
+    { t: "عَلى قَدْرِ أَهْلِ العَزْمِ تَأْتي العَزائِمُ ... وَتَأْتي عَلى قَدْرِ الكِرامِ المَكارِمُ", src: "المتنبّي" },
+    { t: "وَتَعْظُمُ في عَيْنِ الصَّغيرِ صِغارُها ... وَتَصْغُرُ في عَيْنِ العَظيمِ العَظائِمُ", src: "المتنبّي" },
+    { t: "إِذا غامَرْتَ في شَرَفٍ مَرومِ ... فَلا تَقْنَعْ بِما دونَ النُّجومِ", src: "المتنبّي" },
+    { t: "وَإِذا كانَتِ النُّفوسُ كِبارًا ... تَعِبَتْ في مُرادِها الأَجْسامُ", src: "المتنبّي" },
+    { t: "وَما نَيْلُ المَطالِبِ بِالتَّمَنّي ... وَلَكِنْ تُؤْخَذُ الدُّنْيا غِلابا", src: "أحمد شوقي" },
+    { t: "وَمَنْ يَتَهَيَّبْ صُعودَ الجِبالِ ... يَعِشْ أَبَدَ الدَّهْرِ بَيْنَ الحُفَرْ", src: "أبو القاسم الشابّي" },
+    { t: "سَأَعيشُ رَغْمَ الدّاءِ وَالأَعْداءِ ... كَالنَّسْرِ فَوْقَ القِمَّةِ الشَّمّاءِ", src: "أبو القاسم الشابّي" },
+    { t: "دَعِ الأَيّامَ تَفْعَلُ ما تَشاءُ ... وَطِبْ نَفْسًا إِذا حَكَمَ القَضاءُ", src: "الإمام الشافعي" },
+    { t: "ضاقَتْ فَلَمّا اسْتَحْكَمَتْ حَلَقاتُها ... فُرِجَتْ وَكُنْتُ أَظُنُّها لا تُفْرَجُ", src: "يُنسب إلى الإمام الشافعي" }
+  ];
+
+  /* النور: q = قرآن، b = البخاري، m = مسلم */
+  var NUR = [
+    { t: "﴿رَبِّ اشْرَحْ لِي صَدْرِي ۝ وَيَسِّرْ لِي أَمْرِي ۝ وَاحْلُلْ عُقْدَةً مِّن لِّسَانِي ۝ يَفْقَهُوا قَوْلِي﴾", src: "سورة طه: 25–28", q: 1, kind: "دعاء" },
+    { t: "﴿رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ﴾", src: "سورة البقرة: 201", q: 1, kind: "دعاء" },
+    { t: "﴿وَقُل رَّبِّ زِدْنِي عِلْمًا﴾", src: "سورة طه: 114", q: 1, kind: "دعاء" },
+    { t: "﴿رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا﴾", src: "سورة البقرة: 286", q: 1, kind: "دعاء" },
+    { t: "﴿رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ﴾", src: "سورة آل عمران: 8", q: 1, kind: "دعاء" },
+    { t: "﴿رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ﴾", src: "سورة القصص: 24", q: 1, kind: "دعاء" },
+    { t: "﴿لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ﴾", src: "سورة الأنبياء: 87", q: 1, kind: "دعاء" },
+    { t: "﴿رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا﴾", src: "سورة الكهف: 10", q: 1, kind: "دعاء" },
+    { t: "﴿رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ﴾", src: "سورة النمل: 19", q: 1, kind: "دعاء" },
+    { t: "﴿رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ﴾", src: "سورة الأعراف: 23", q: 1, kind: "دعاء" },
+    { t: "﴿حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ﴾", src: "سورة آل عمران: 173", q: 1, kind: "آية" },
+    { t: "﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾", src: "سورة الشرح: 5–6", q: 1, kind: "آية" },
+    { t: "﴿لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا﴾", src: "سورة البقرة: 286", q: 1, kind: "آية" },
+    { t: "﴿وَلَا تَهِنُوا وَلَا تَحْزَنُوا وَأَنتُمُ الْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ﴾", src: "سورة آل عمران: 139", q: 1, kind: "آية" },
+    { t: "﴿وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ﴾", src: "سورة الطلاق: 3", q: 1, kind: "آية" },
+    { t: "﴿سَيَجْعَلُ اللَّهُ بَعْدَ عُسْرٍ يُسْرًا﴾", src: "سورة الطلاق: 7", q: 1, kind: "آية" },
+    { t: "﴿أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ﴾", src: "سورة الرعد: 28", q: 1, kind: "آية" },
+    { t: "﴿إِنَّ اللَّهَ مَعَ الصَّابِرِينَ﴾", src: "سورة البقرة: 153", q: 1, kind: "آية" },
+    { t: "﴿وَلَا تَيْأَسُوا مِن رَّوْحِ اللَّهِ﴾", src: "سورة يوسف: 87", q: 1, kind: "آية" },
+    { t: "﴿لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا﴾", src: "سورة التوبة: 40", q: 1, kind: "آية" },
+    { t: "﴿لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ﴾", src: "سورة إبراهيم: 7", q: 1, kind: "آية" },
+    { t: "﴿وَعَسَىٰ أَن تَكْرَهُوا شَيْئًا وَهُوَ خَيْرٌ لَّكُمْ﴾", src: "سورة البقرة: 216", q: 1, kind: "آية" },
+    { t: "﴿وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ﴾", src: "سورة البقرة: 186", q: 1, kind: "آية" },
+
+    { t: "«اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الهَمِّ وَالحَزَنِ، وَالعَجْزِ وَالكَسَلِ، وَالجُبْنِ وَالبُخْلِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ»", src: "صحيح البخاري (6369)", b: 1, kind: "دعاء" },
+    { t: "«لَا إِلَهَ إِلَّا اللَّهُ العَظِيمُ الحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ العَرْشِ العَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَوَاتِ وَرَبُّ الأَرْضِ وَرَبُّ العَرْشِ الكَرِيمِ»", src: "دعاء الكرب · متفق عليه: البخاري (6346)، مسلم (2730)", b: 1, m: 1, kind: "دعاء" },
+    { t: "«اللَّهُمَّ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً، وَفِي الآخِرَةِ حَسَنَةً، وَقِنَا عَذَابَ النَّارِ»", src: "كان أكثرَ دعاء النبي ﷺ · متفق عليه: البخاري (6389)، مسلم (2690)", b: 1, m: 1, kind: "دعاء" },
+    { t: "«اللَّهُمَّ مُصَرِّفَ القُلُوبِ، صَرِّفْ قُلُوبَنَا عَلَى طَاعَتِكَ»", src: "صحيح مسلم (2654)", m: 1, kind: "دعاء" },
+    { t: "«اللَّهُمَّ إِنِّي أَسْأَلُكَ الهُدَى وَالتُّقَى، وَالعَفَافَ وَالغِنَى»", src: "صحيح مسلم (2721)", m: 1, kind: "دعاء" },
+    { t: "«اللَّهُمَّ أَصْلِحْ لِي دِينِيَ الَّذِي هُوَ عِصْمَةُ أَمْرِي، وَأَصْلِحْ لِي دُنْيَايَ الَّتِي فِيهَا مَعَاشِي، وَأَصْلِحْ لِي آخِرَتِي الَّتِي فِيهَا مَعَادِي، وَاجْعَلِ الحَيَاةَ زِيَادَةً لِي فِي كُلِّ خَيْرٍ، وَاجْعَلِ المَوْتَ رَاحَةً لِي مِنْ كُلِّ شَرٍّ»", src: "صحيح مسلم (2720)", m: 1, kind: "دعاء" },
+    { t: "«اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ زَوَالِ نِعْمَتِكَ، وَتَحَوُّلِ عَافِيَتِكَ، وَفُجَاءَةِ نِقْمَتِكَ، وَجَمِيعِ سَخَطِكَ»", src: "صحيح مسلم (2739)", m: 1, kind: "دعاء" },
+    { t: "«اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنِي، وَعَافِنِي، وَارْزُقْنِي»", src: "صحيح مسلم (2697)", m: 1, kind: "دعاء" },
+    { t: "«اللَّهُمَّ آتِ نَفْسِي تَقْوَاهَا، وَزَكِّهَا أَنْتَ خَيْرُ مَنْ زَكَّاهَا، أَنْتَ وَلِيُّهَا وَمَوْلَاهَا»", src: "صحيح مسلم (2722) · من حديث أطول", m: 1, kind: "دعاء" },
+    { t: "«اللَّهُمَّ اهْدِنِي وَسَدِّدْنِي»", src: "صحيح مسلم (2725)", m: 1, kind: "دعاء" },
+    { t: "«اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ»", src: "سيّد الاستغفار · صحيح البخاري (6306)", b: 1, kind: "دعاء" },
+    { t: "«اللَّهُمَّ أَسْلَمْتُ وَجْهِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ، اللَّهُمَّ آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ»", src: "قبل النوم · صحيح البخاري (247)", b: 1, kind: "دعاء" },
+    { t: "«اللَّهُمَّ بِاسْمِكَ أَمُوتُ وَأَحْيَا»", src: "قبل النوم · صحيح البخاري (6314)", b: 1, kind: "دعاء" },
+    { t: "«الحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ»", src: "عند الاستيقاظ · صحيح البخاري (6312)", b: 1, kind: "دعاء" },
+    { t: "«أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ»", src: "صحيح مسلم (2708)", m: 1, kind: "دعاء" },
+
+    { t: "«المُؤْمِنُ القَوِيُّ خَيْرٌ وَأَحَبُّ إِلَى اللَّهِ مِنَ المُؤْمِنِ الضَّعِيفِ، وَفِي كُلٍّ خَيْرٌ، احْرِصْ عَلَى مَا يَنْفَعُكَ، وَاسْتَعِنْ بِاللَّهِ وَلَا تَعْجَزْ»", src: "صحيح مسلم (2664)", m: 1, kind: "حديث" },
+    { t: "«أَحَبُّ الأَعْمَالِ إِلَى اللَّهِ أَدْوَمُهَا وَإِنْ قَلَّ»", src: "صحيح مسلم (783)، وبنحوه في البخاري (6464)", b: 1, m: 1, kind: "حديث" },
+    { t: "«عَجَبًا لِأَمْرِ المُؤْمِنِ، إِنَّ أَمْرَهُ كُلَّهُ خَيْرٌ، وَلَيْسَ ذَاكَ لِأَحَدٍ إِلَّا لِلْمُؤْمِنِ، إِنْ أَصَابَتْهُ سَرَّاءُ شَكَرَ فَكَانَ خَيْرًا لَهُ، وَإِنْ أَصَابَتْهُ ضَرَّاءُ صَبَرَ فَكَانَ خَيْرًا لَهُ»", src: "صحيح مسلم (2999)", m: 1, kind: "حديث" },
+    { t: "«مَا يُصِيبُ المُسْلِمَ مِنْ نَصَبٍ وَلَا وَصَبٍ، وَلَا هَمٍّ وَلَا حُزْنٍ وَلَا أَذًى وَلَا غَمٍّ، حَتَّى الشَّوْكَةِ يُشَاكُهَا، إِلَّا كَفَّرَ اللَّهُ بِهَا مِنْ خَطَايَاهُ»", src: "صحيح البخاري (5641)", b: 1, kind: "حديث" },
+    { t: "«يَسِّرُوا وَلَا تُعَسِّرُوا، وَبَشِّرُوا وَلَا تُنَفِّرُوا»", src: "صحيح البخاري (69)", b: 1, kind: "حديث" },
+    { t: "«إِنَّ اللَّهَ لَا يَنْظُرُ إِلَى صُوَرِكُمْ وَأَمْوَالِكُمْ، وَلَكِنْ يَنْظُرُ إِلَى قُلُوبِكُمْ وَأَعْمَالِكُمْ»", src: "صحيح مسلم (2564)", m: 1, kind: "حديث" },
+    { t: "«وَالكَلِمَةُ الطَّيِّبَةُ صَدَقَةٌ»", src: "متفق عليه: البخاري (2989)، مسلم (1009)", b: 1, m: 1, kind: "حديث" },
+    { t: "«لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ» كنزٌ من كنوز الجنّة", src: "متفق عليه: البخاري (4205)، مسلم (2704)", b: 1, m: 1, kind: "حديث" },
+    { t: "«كَلِمَتَانِ خَفِيفَتَانِ عَلَى اللِّسَانِ، ثَقِيلَتَانِ فِي المِيزَانِ، حَبِيبَتَانِ إِلَى الرَّحْمَنِ: سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ العَظِيمِ»", src: "متفق عليه: البخاري (6682)، مسلم (2694)", b: 1, m: 1, kind: "حديث" },
+    { t: "«مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا، سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الجَنَّةِ»", src: "صحيح مسلم (2699)", m: 1, kind: "حديث" },
+    { t: "«لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ، إِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الغَضَبِ»", src: "متفق عليه: البخاري (6114)، مسلم (2609)", b: 1, m: 1, kind: "حديث" },
+    { t: "«إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ، وَيُعْطِي عَلَى الرِّفْقِ مَا لَا يُعْطِي عَلَى العُنْفِ»", src: "صحيح مسلم (2593)", m: 1, kind: "حديث" },
+    { t: "«لَا تَحْقِرَنَّ مِنَ المَعْرُوفِ شَيْئًا، وَلَوْ أَنْ تَلْقَى أَخَاكَ بِوَجْهٍ طَلْقٍ»", src: "صحيح مسلم (2626)", m: 1, kind: "حديث" }
+  ];
+  var DUAS = NUR.filter(function (n) { return n.kind === "دعاء"; });
+  var KARB = NUR.filter(function (n) { return n.src.indexOf("دعاء الكرب") !== -1; })[0];
+
+  /* mode: fun = يقبل العنف، soft = ناعم دايمًا، fusha = فصحى بدون إضافات، nur = نور */
+  var CATS = [
+    { id: "mix", name: "خلطة كرايزيي", mode: "fun" },
+    { id: "violent", name: "دعم بعنف", mode: "fun", list: VIOLENT },
+    { id: "capp", name: "كابتشينو الصباح", mode: "fun", list: CAPP },
+    { id: "focus", name: "وضع التركيز", mode: "fun", list: FOCUS },
+    { id: "funny", name: "ضحك", mode: "fun", list: FUNNY },
+    { id: "party", name: "احتفال", mode: "fun", list: PARTY },
+    { id: "facts", name: "حقائق (مش علمية)", mode: "fun", list: FACTS },
+    { id: "praise", name: "مديح نظيف", mode: "fun", list: PRAISE },
+    { id: "soft", name: "لليوم الثقيل", mode: "soft", list: SOFT },
+    { id: "night", name: "قبل النوم", mode: "soft", list: NIGHT },
+    { id: "fusha", name: "بالفصحى", mode: "fusha", list: FUSHA },
+    { id: "nur", name: "نور وأدعية", mode: "nur", list: NUR }
+  ];
+  var MIX_FROM = CATS.filter(function (c) { return c.mode === "fun" && c.list; });
+
+  var LEVELS = [
+    { name: "لطيف", btn: "ادعمني بلطف", pre: [], suf: [], burst: "" },
+    { name: "عنيف", btn: "ادعمني بعنف", pre: [], suf: [" بعنف.", " بعنف!", " الجحيم أجل!"], burst: "بعنف!" },
+    { name: "عنيف جدًا", btn: "ادعمني بعنف أكثر", pre: ["أويلييي! ", "الجحيم أجل! "], suf: [" بعنف!!", " بعنف شديد!!"], burst: "أويلييي!" },
+    { name: "كرايزيي", btn: "كرايزيي، يلا!", pre: ["أويلييي!!! ", "كرايزيي!! ", "الجحيم أجل!!! "], suf: [" بعنف كرايزيي!!!", " بعنف!!! أويلييي!"], burst: "كرايزيي!" }
+  ];
+
+  var RANKS = [[0, "لسّه بنسخّن"], [1, "مشحونة شوي"], [5, "مشحونة"], [10, "خطيرة"], [20, "خطيرة جدًا"], [35, "كرايزيي رسميًا"], [60, "أسطورة الدعم"]];
+
+  /* ============ الحالة ============ */
+  var today = new Date().toISOString().slice(0, 10);
+  var saved = store("suad-state") || {};
+  var state = {
+    cat: saved.cat || "mix",
+    lvl: typeof saved.lvl === "number" ? saved.lvl : 1,
+    total: saved.total || 0,
+    todayN: saved.day === today ? (saved.todayN || 0) : 0
+  };
+  if (!CATS.some(function (c) { return c.id === state.cat; })) state.cat = "mix";
+  var favs = store("suad-favs") || [];
+  var current = { text: $("phrase").textContent, src: "" };
+  var bags = {};
+
+  function save() { store("suad-state", { cat: state.cat, lvl: state.lvl, total: state.total, todayN: state.todayN, day: today }); }
+
+  function draw(cat) {
+    var c = cat;
+    if (c.id === "mix") c = pick(MIX_FROM);
+    var bag = bags[c.id];
+    if (!bag || !bag.length) {
+      bag = c.list.map(function (_, i) { return i; });
+      for (var i = bag.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = bag[i]; bag[i] = bag[j]; bag[j] = t; }
+      bags[c.id] = bag;
+    }
+    var item = c.list[bag.pop()];
+    if (typeof item === "string") item = { t: item };
+    return { item: item, from: c };
+  }
+
+  /* ============ عرض الأقسام والمستويات ============ */
+  var catsEl = $("cats"), levelsEl = $("levels");
+  CATS.forEach(function (c) {
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "chip"; b.textContent = c.name; b.dataset.id = c.id;
+    b.addEventListener("click", function () { state.cat = c.id; save(); syncUI(); support(); });
+    catsEl.appendChild(b);
+  });
+  LEVELS.forEach(function (l, i) {
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "lvl"; b.dataset.i = i;
+    var pips = '<span class="pips">';
+    for (var k = 0; k < 4; k++) pips += '<b class="' + (k <= i ? "on" : "") + '"></b>';
+    b.innerHTML = pips + "</span><span>" + l.name + "</span>";
+    b.addEventListener("click", function () { state.lvl = i; save(); syncUI(); support(); });
+    levelsEl.appendChild(b);
+  });
+
+  function catById(id) { for (var i = 0; i < CATS.length; i++) if (CATS[i].id === id) return CATS[i]; return CATS[0]; }
+
+  function syncUI() {
+    var cat = catById(state.cat);
+    Array.prototype.forEach.call(catsEl.children, function (b) { b.setAttribute("aria-pressed", b.dataset.id === state.cat ? "true" : "false"); });
+    Array.prototype.forEach.call(levelsEl.children, function (b) { b.setAttribute("aria-pressed", +b.dataset.i === state.lvl ? "true" : "false"); });
+    var note = $("softNote");
+    if (cat.mode === "soft") { note.hidden = false; note.textContent = "بهالقسم الدعم بيصير ناعم تلقائيًا، مهما كان مستوى العنف."; }
+    else if (cat.mode === "fusha") { note.hidden = false; note.textContent = "الفصحى بتنقال زي ما هي، بدون إضافات."; }
+    else note.hidden = true;
+    $("go").textContent = cat.mode === "fun" ? LEVELS[state.lvl].btn : (cat.mode === "nur" ? "التالي" : "كمان وحدة");
+    var n = state.todayN, rank = RANKS[0][1];
+    RANKS.forEach(function (r) { if (n >= r[0]) rank = r[1]; });
+    $("rank").textContent = rank;
+    $("moraleFill").style.width = Math.max(4, Math.min(100, n / 60 * 100)) + "%";
+    $("doseNo").textContent = "الجرعة رقم " + state.total;
+  }
+
+  /* ============ الدعم ============ */
+  var card = $("card");
+  function support() {
+    var cat = catById(state.cat);
+    var d = draw(cat);
+    var mode = d.from.mode, lvl = mode === "fun" ? state.lvl : 0, L = LEVELS[lvl];
+    var text = d.item.t;
+    if (lvl > 0) {
+      var pre = L.pre.length ? pick(L.pre) : "";
+      if (pre && text.indexOf(pre.replace(/[!\s]+$/g, "")) !== -1) pre = "";
+      var suf = L.suf.length ? pick(L.suf) : "";
+      if (text.indexOf("بعنف") !== -1) suf = "";
+      if (suf.indexOf("الجحيم أجل") !== -1 && text.indexOf("الجحيم أجل") !== -1) suf = "";
+      text = pre + text + suf;
+    }
+    current = { text: text, src: d.item.src || "" };
+    state.total++; state.todayN++; save();
+
+    card.className = "card" + (mode === "nur" ? " nur" : mode === "soft" ? " soft" : mode === "fusha" ? " fusha" : "") + (lvl === 3 ? " crazy" : "");
+    var ph = $("phrase");
+    ph.className = "phrase" + (mode === "fusha" ? " classic" : "");
+    ph.textContent = text;
+    var src = $("src");
+    if (d.item.src) { src.hidden = false; src.textContent = d.item.src; } else src.hidden = true;
+    $("cardTop").hidden = mode === "nur";
+    $("catTag").textContent = d.from.name;
+    var burst = $("burst");
+    if (lvl > 0) { burst.hidden = false; burst.textContent = L.burst; card.classList.add("has-burst"); } else burst.hidden = true;
+    syncUI();
+    syncFavBtn();
+
+    if (!calm) {
+      void card.offsetWidth;
+      card.classList.add("pop");
+      var machine = $("machine");
+      machine.classList.remove("shake1", "shake2", "shake3");
+      void machine.offsetWidth;
+      if (lvl > 0) machine.classList.add("shake" + lvl);
+      if (lvl >= 2 || (d.from.id === "party" && lvl > 0)) confetti(lvl === 3 ? 46 : 22);
+    }
+  }
+  $("go").addEventListener("click", support);
+
+  function confetti(n) {
+    var box = $("confetti");
+    box.innerHTML = "";
+    for (var i = 0; i < n; i++) {
+      var p = document.createElement("i");
+      p.style.left = Math.random() * 100 + "%";
+      p.style.animationDelay = Math.random() * 0.4 + "s";
+      p.style.animationDuration = 1.2 + Math.random() * 0.9 + "s";
+      box.appendChild(p);
+    }
+    setTimeout(function () { box.innerHTML = ""; }, 2600);
+  }
+
+  /* ============ نسخ وحفظ ============ */
+  var toastT;
+  function toast(msg) {
+    var t = $("toast"); t.textContent = msg; t.classList.add("show");
+    clearTimeout(toastT); toastT = setTimeout(function () { t.classList.remove("show"); }, 1800);
+  }
+  function selectNode(node) {
+    try { var r = document.createRange(); r.selectNodeContents(node); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); } catch (e) {}
+  }
+  function copyText(text, node) {
+    var done = function () { toast("انْسخت! ابعتيها لحدا بيستاهل"); };
+    var fail = function () { selectNode(node); toast("حدّدنا النص، انسخيه من عندك"); };
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fail);
+      else fail();
+    } catch (e) { fail(); }
+  }
+  $("copy").addEventListener("click", function () {
+    copyText(current.text + (current.src ? "\n— " + current.src : ""), $("phrase"));
+  });
+
+  function isFav() { return favs.some(function (f) { return f.text === current.text; }); }
+  function syncFavBtn() { var on = isFav(); $("fav").textContent = on ? "♥ محفوظة" : "♡ حفظ"; $("fav").classList.toggle("on", on); }
+  $("fav").addEventListener("click", function () {
+    if (isFav()) favs = favs.filter(function (f) { return f.text !== current.text; });
+    else { favs.unshift({ text: current.text, src: current.src }); toast("انحفظت بالمحفوظات"); }
+    store("suad-favs", favs); syncFavBtn(); renderFavs();
+  });
+  function renderFavs() {
+    var ul = $("favList"); ul.innerHTML = "";
+    $("favEmpty").hidden = favs.length > 0;
+    favs.forEach(function (f, i) {
+      var li = document.createElement("li");
+      var s = document.createElement("span"); s.textContent = f.text + (f.src ? " — " + f.src : "");
+      var b = document.createElement("button"); b.type = "button"; b.textContent = "شيلي";
+      b.addEventListener("click", function () { favs.splice(i, 1); store("suad-favs", favs); renderFavs(); syncFavBtn(); });
+      li.appendChild(s); li.appendChild(b); ul.appendChild(li);
+    });
+  }
+
+  /* ============ حلبة المشاكل ============ */
+  var HITS = ["بعنف!", "ضربة كابتشينو!", "أويلييي!", "كرايزيي!", "ضربة الثقة!", "ركلة الإصرار!", "الجحيم أجل!", "كفّ معنوي!", "بوكس التركيز!", "صفعة الحماس!"];
+  var HIT_LINES = ["المشكلة بتترنّح...", "شكلها ندمت إنها إجت", "كمان وحدة!", "المشكلة طلبت مي", "الحَكَم بيعدّ...", "ما بقي فيها نفس", "الجمهور بيصفّق لسعاد"];
+  var KO = ["أويلييي! المشكلة «{p}» طاحت بالضربة القاضية.", "الجحيم أجل! المشكلة «{p}» طلبت هدنة وانسحبت.", "كرايزيي! المشكلة «{p}» طلعت من الحلبة وهي بتعيّط."];
+  var hp = 100, ko = false;
+  function problemName() { var v = $("problem").value.trim(); return v || "المشكلة المجهولة"; }
+  function resetRing() {
+    hp = 100; ko = false;
+    $("bag").classList.remove("ko");
+    $("hpFill").style.width = "100%";
+    $("hpNum").textContent = "100%";
+    $("hpName").textContent = problemName();
+    $("hpLine").textContent = "المشكلة واقفة وخايفة. ابدئي.";
+    $("punch").textContent = "اضربيها!";
+  }
+  $("problem").addEventListener("input", function () { if (!ko) $("hpName").textContent = problemName(); });
+  $("punch").addEventListener("click", function () {
+    if (ko) { resetRing(); return; }
+    var dmg = 8 + Math.floor(Math.random() * 11);
+    hp = Math.max(0, hp - dmg);
+    $("hpFill").style.width = hp + "%";
+    $("hpNum").textContent = hp + "%";
+    var bag = $("bag"); bag.classList.remove("hit"); void bag.offsetWidth; bag.classList.add("hit");
+    var arena = $("arena"), pop = document.createElement("span");
+    pop.className = "hit-pop"; pop.textContent = pick(HITS);
+    pop.style.top = 20 + Math.random() * 40 + "px";
+    pop.style.left = 10 + Math.random() * 55 + "%";
+    arena.appendChild(pop); setTimeout(function () { pop.remove(); }, 850);
+    if (hp === 0) {
+      ko = true;
+      bag.classList.add("ko");
+      $("hpLine").textContent = pick(KO).replace("{p}", problemName());
+      $("punch").textContent = "مشكلة جديدة";
+      if (!calm) confetti(36);
+    } else $("hpLine").textContent = pick(HIT_LINES);
+  });
+
+  /* ============ زر الطوارئ ============ */
+  var sosRun = 0;
+  $("sos").addEventListener("click", function () {
+    var run = ++sosRun, br = $("breath"), line = $("sosLine"), nur = $("sosNur"), btn = $("sos");
+    btn.disabled = true; nur.hidden = true;
+    var steps = [
+      ["in", "شهيق... 4", 4000], ["in", "اسكتي شوي... 4", 4000], ["out", "زفير... 6", 6000],
+      ["in", "شهيق... 4", 4000], ["in", "اسكتي شوي... 4", 4000], ["out", "زفير... 6", 6000]
+    ];
+    line.textContent = "تابعي الدائرة. ما في إشي مستعجل.";
+    var i = 0;
+    (function next() {
+      if (run !== sosRun) return;
+      if (i >= steps.length) {
+        br.className = "breath"; br.textContent = "أحسن؟";
+        line.textContent = pick(SOFT);
+        nur.innerHTML = "";
+        nur.appendChild(document.createTextNode(KARB.t));
+        var sm = document.createElement("small"); sm.textContent = KARB.src; nur.appendChild(sm);
+        nur.hidden = false;
+        btn.disabled = false; btn.textContent = "مرّة ثانية";
+        return;
+      }
+      var s = steps[i++];
+      br.className = "breath " + s[0]; br.textContent = s[1];
+      setTimeout(next, calm ? 1500 : s[2]);
+    })();
+  });
+
+  /* ============ فاتورة الدعم ============ */
+  var R_ITEMS = ["جرعة ثقة مركّزة", "علبة صبر حجم عائلي", "كيس ضحك مقرمش", "كابتشينو معنوي كبير", "تأمين شامل ضد الإحباط", "شحن معنويات سريع", "قسيمة نوم بدون منبّه", "طقم أعصاب احتياط", "رزمة دعاء بظهر الغيب", "تصليح مزاج فوري", "اشتراك «إنتي قدّها» السنوي", "ضربة حماس بعنف", "كرتونة أويلييي", "وجبة إنجاز مع بطاطا", "صيانة ابتسامة دورية", "ريموت للتوتّر (زر الإطفاء بس)", "تذكرة VIP لحلبة المشاكل"];
+  var R_QTY = ["×1", "×2", "×3", "×100", "×∞", "كيلو", "طن", "علبة"];
+  var R_PRICE = ["ببلاش", "على حسابنا", "مجاني", "هدية", "ما بيتقدّر", "مدفوع مسبقًا", "خصم 100%"];
+  var R_FOOT = ["الفاتورة غير قابلة للإرجاع. الدعم نهائي.", "طريقة الدفع: ابتسامة وحدة.", "الإدارة بتشكرك على كونك سعاد.", "صالحة مدى الحياة، وقابلة للتجديد بعنف."];
+  function shuffled(a) { var b = a.slice(); for (var i = b.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = b[i]; b[i] = b[j]; b[j] = t; } return b; }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function makeReceipt() {
+    var r = $("receipt"); r.innerHTML = "";
+    r.appendChild(el("div", "p-head", "فاتورة دعم معنوي"));
+    var meta = el("div", "p-meta");
+    meta.appendChild(el("span", null, "رقم SU-" + (1000 + Math.floor(Math.random() * 9000))));
+    meta.appendChild(el("span", null, new Date().toLocaleDateString("ar-JO", { day: "numeric", month: "long", year: "numeric" })));
+    r.appendChild(meta);
+    shuffled(R_ITEMS).slice(0, 5).forEach(function (it) {
+      var row = el("div", "row");
+      row.appendChild(el("span", null, it)); row.appendChild(el("span", null, pick(R_QTY))); row.appendChild(el("span", null, pick(R_PRICE)));
+      r.appendChild(row);
+    });
+    var tot = el("div", "total"); tot.appendChild(el("span", null, "المجموع")); tot.appendChild(el("span", null, "ما بيتقدّر بثمن"));
+    r.appendChild(tot);
+    r.appendChild(el("div", "foot", pick(R_FOOT)));
+  }
+  $("newReceipt").addEventListener("click", makeReceipt);
+
+  /* ============ وصفة الكابتشينو ============ */
+  var C_ING = ["رغوة ضحك ناعمة", "حليب طمأنينة دافي", "رشّة قرفة عنيفة", "ملعقة صبر جميل", "كاكاو ثقة غامق", "قطرة كرايزيي", "رشّة «إنتي قدّها»", "سكّر خبر حلو", "شوية بسملة قبل أول رشفة", "قلب مرسوم على الرغوة، بدقّة هندسية", "ملعقتين حماس بدون سكّر"];
+  var C_STEP = ["اخفقي بعنف 10 ثواني.", "قلّبي باتجاه النجاح.", "اشربيه وإنتي قاعدة قعدة المديرة.", "صوّريه قبل ما تشربيه، هاد كابتشينو تاريخي.", "اشربيه سخن، والمشاكل خلّيها تبرد."];
+  var C_END = ["النتيجة: مزاج 100% وطاقة كرايزيي.", "النتيجة: يوم بيمشي على كيفك.", "النتيجة: المهام بتخلص لحالها من الخوف.", "تحذير: قد يسبّب إنجازات مفاجئة."];
+  function makeRecipe() {
+    var ol = $("recipe"); ol.innerHTML = "";
+    shuffled(C_ING).slice(0, 4).forEach(function (x) { ol.appendChild(el("li", null, x)); });
+    ol.appendChild(el("li", null, pick(C_STEP)));
+    $("recipeEnd").textContent = pick(C_END);
+  }
+  $("newRecipe").addEventListener("click", makeRecipe);
+
+  /* ============ الشهادة ============ */
+  var TITLES = ["بطلة الإصرار الكبرى", "سيّدة الكابتشينو والإنجاز", "قاهرة المهام المتأخّرة", "أميرة الصبر الجميل", "رئيسة جمهورية الشطارة", "حاملة الحزام الذهبي في حلبة المشاكل", "سفيرة السعادة فوق العادة", "عميدة كلّية «إنتي قدّها»", "صاحبة الضربة القاضية للتوتّر"];
+  var REASONS = ["لِما أبدته من صبرٍ وشطارةٍ أعجزا المقاييس", "لِثباتِها في وجهِ الأيّامِ ثباتَ الجبال", "لأنّها تُكمِلُ حين يتوقّفُ غيرُها", "لِما نشرته من طيبٍ وضحكٍ في كلِّ مكانٍ حلّت فيه"];
+  function makeCert() {
+    var c = $("cert"); c.innerHTML = "";
+    c.appendChild(document.createTextNode("تشهدُ هيئةُ الدعمِ المعنويِّ العنيف بأنَّ"));
+    c.appendChild(el("b", "title", "سعاد"));
+    c.appendChild(document.createTextNode("قد استحقّت لقبَ"));
+    c.appendChild(el("b", "title", "«" + pick(TITLES) + "»"));
+    c.appendChild(document.createTextNode(pick(REASONS) + "، وذلك عن جدارةٍ واستحقاق."));
+    var sig = el("div", "sig");
+    sig.appendChild(el("span", null, "حُرِّرت في " + new Date().toLocaleDateString("ar-JO", { day: "numeric", month: "long", year: "numeric" })));
+    sig.appendChild(el("span", null, "الختم: بعنف"));
+    c.appendChild(sig);
+  }
+  $("newCert").addEventListener("click", makeCert);
+
+  /* ============ دفتر النور ============ */
+  var FILTERS = [["all", "الكل"], ["dua", "الأدعية"], ["q", "من القرآن"], ["b", "صحيح البخاري"], ["m", "صحيح مسلم"]];
+  var nurFilter = "all";
+  var fEl = $("nurFilters");
+  FILTERS.forEach(function (f) {
+    var b = el("button", "chip", f[1]); b.type = "button"; b.dataset.f = f[0];
+    b.addEventListener("click", function () { nurFilter = f[0]; renderNur(); });
+    fEl.appendChild(b);
+  });
+  function renderNur() {
+    Array.prototype.forEach.call(fEl.children, function (b) { b.setAttribute("aria-pressed", b.dataset.f === nurFilter ? "true" : "false"); });
+    var ul = $("nurList"); ul.innerHTML = "";
+    NUR.filter(function (n) {
+      if (nurFilter === "all") return true;
+      if (nurFilter === "dua") return n.kind === "دعاء";
+      return !!n[nurFilter];
+    }).forEach(function (n) {
+      var li = el("li", "nur-item");
+      var t = el("p", "t", n.t);
+      li.appendChild(t);
+      li.appendChild(el("span", "s", n.src));
+      var k = el("button", "k", "نسخ"); k.type = "button";
+      k.addEventListener("click", function () { copyText(n.t + "\n— " + n.src, t); });
+      li.appendChild(k);
+      ul.appendChild(li);
+    });
+  }
+  (function dailyDua() {
+    var d = new Date(), seed = d.getFullYear() * 372 + d.getMonth() * 31 + d.getDate();
+    var x = DUAS[seed % DUAS.length];
+    $("todayT").textContent = x.t;
+    $("todayS").textContent = x.src;
+  })();
+
+  /* ============ بداية ============ */
+  syncUI();
+  syncFavBtn();
+  renderFavs();
+  resetRing();
+  makeReceipt();
+  makeRecipe();
+  makeCert();
+  renderNur();
+})();
+</script>
+</body>
+</html>
